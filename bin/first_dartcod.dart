@@ -25,6 +25,7 @@ void main(List<String> arguments) {
 
   // list , map
 
+
   // List <String> list = ['ss','2'];
   // List <dynamic> listB = [1,'s'];
   // Map<String,dynamic> map = {'name':'ali','age':20};
