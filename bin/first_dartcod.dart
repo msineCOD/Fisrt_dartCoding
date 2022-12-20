@@ -2,11 +2,15 @@ import 'dart:ffi';
 
 import 'package:first_dartcod/first_dartcod.dart' as first_dartcod;
 
+import 'animal.dart';
+import 'data.dart';
 import 'super_class.dart';
 
 enum MyEnum { buy, sell, outStore }
 
 enum a { gaz, benzin }
+
+
 
 void main(List<String> arguments) {
   // var
@@ -188,11 +192,84 @@ void main(List<String> arguments) {
 // constructor
 
 
-// SuperClass superClass = SuperClass(12,'ali');
+// SuperClass superClass = SuperClass(age: 20);
+// SuperClass superClass = SuperClass.namear(222);
+// superClass.name;
 // print(superClass.name);
-// print(superClass.age = 22);
+// print(superClass.age );
+
+// -------------------------------------------------------------------------
+// ----------------------------------lesson four -----------------------------
+
+// static , final
+
+// SuperClass superClass = SuperClass();
+
+// Animals animals = Animals(name: 'morgh');
+
+// print(animals.name);
+
+// animals.myKind();
+//
+// Lacklack lacklack = Lacklack(name: 'laklak');
+//
+// lacklack.myKind();
+//
+// Kapour kapour = Kapour(name: 'kapor');
+//
+// kapour.myKind();
+
+
+// Map<String,dynamic> haveData = {'name': 'ali','userName':'user','id':'my id'};
+// Map<String,dynamic> mtData = {'empty': ''};
+//
+// Data data = Data.FmyData(map: mtData);
+// print(data);
+
+
+
+
+
+
+
+
+
 
 }
+
+// class Data {
+//
+//   String? name;
+//   String? userName;
+//   int? id;
+//   Map<String,dynamic>? map;
+//
+//   Data(this.name,this.userName,this.id);
+//
+//   factory Data.FmyData({Map<String,dynamic>? map}) {
+//
+//     if(map?['name'] == null){
+//       return MtData(map);
+//
+//     }
+//     else{
+//       return MtData();
+//     }
+//
+//
+//   }
+// }
+
+
+// class MtData extends Data{
+//
+//   String? empty;
+//
+//   MtData (this.empty) : super.FmyData(map: map);
+//
+//
+//
+// }
 
 // function(String a,{required String name}){
 //
