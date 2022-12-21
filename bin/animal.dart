@@ -61,7 +61,7 @@ abstract class A{}
 
 
 abstract class B{
-  void nobody();
+  void nobody2();
 }
 
 
@@ -79,7 +79,7 @@ class E implements A,B,C,D {
   }
 
   @override
-  void nobody() {
+  void nobody2() {
 
   }
 }

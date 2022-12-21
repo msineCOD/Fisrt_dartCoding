@@ -3,7 +3,10 @@ import 'dart:ffi';
 import 'package:first_dartcod/first_dartcod.dart' as first_dartcod;
 
 import 'animal.dart';
+import 'car.dart';
 import 'data.dart';
+import 'my_extention.dart';
+import 'new_animal.dart';
 import 'super_class.dart';
 
 enum MyEnum { buy, sell, outStore }
@@ -121,6 +124,7 @@ void main(List<String> arguments) {
   //*** ------------ lesson tow ------------------------->
 
   // List name = ['ali','hasani'];
+
   // List age = [1,2];
   // List.generate(name.length,
   //         (i) => List.generate(age.length),(j){
@@ -226,11 +230,33 @@ void main(List<String> arguments) {
 // Data data = Data.FmyData(map: mtData);
 // print(data);
 
+//--------------------------------------------------------------
+// ------------------------------- lesson five --------------------------
+
+// AsbTakShakh().doingTakShakh();
+// Panguan().doingPanguan();
+
+// PridParande().doingPrid();
+// Teractor().doingTractor();
 
 
+// int a = 100;
+// String b = a.toString();
+// print(b.runtimeType);
+// String omid = 'omid';
+// print(omid.toUpperCase());
 
 
+// MyInt myInt = MyInt(10);
+// print(myInt.changeIntPlus5());
+// myInt.changeIntPlus5();
 
+// 10.changeIntPlus5();
+//  '10'.changeToInt;
+//  '10.5'.changeToDouble;
+
+// List list = [1,2,3,4,5,6];
+// list.changeList();
 
 
 
