@@ -1,13 +1,19 @@
+import 'dart:convert' as convert;
 import 'dart:ffi';
 
 import 'package:first_dartcod/first_dartcod.dart' as first_dartcod;
 
 import 'animal.dart';
 import 'car.dart';
+import 'class_h.dart' as class1;
+import 'class_j.dart' as class2;
 import 'data.dart';
 import 'my_extention.dart';
 import 'new_animal.dart';
+import 'post/cooment_class.dart';
+import 'post/post.dart';
 import 'super_class.dart';
+import 'package:http/http.dart' as http;
 
 enum MyEnum { buy, sell, outStore }
 
@@ -15,7 +21,7 @@ enum a { gaz, benzin }
 
 
 
-void main(List<String> arguments) {
+void main(List<String> arguments) async{
   // var
 
   // int , String , boolean , double
@@ -258,6 +264,59 @@ void main(List<String> arguments) {
 // List list = [1,2,3,4,5,6];
 // list.changeList();
 
+// -----------------------------------------------------------
+// ------------------------ lesson six ----------------------
+
+
+  // print('loading...');
+  // // print('fetch data');
+  // await Future.delayed(Duration(seconds: 3), () => print('fetch data'));
+  // print('loading data');
+
+
+  // _future().then((value) => print('then'));
+
+
+  // class1.ClassH(4,'d').value;
+  // class2.ClassH(2).value;
+
+
+// Map<String,dynamic> map = {'user':'ali', 'id' : 10};
+// int start = 0;
+// int end = 5;
+//
+// var url = Uri.parse('https://jsonplaceholder.typicode.com/posts' );
+// var response = await http.get(url);
+// var jsonResponse =
+// convert.jsonDecode(response.body);
+// print(jsonResponse);
+
+//
+// print('response status : ${response.statusCode}');
+// print('response body : ${response.body}');
+// //
+// print(await http.read(Uri.https('https://jsonplaceholder.typicode.com/posts', 'unSends' ,map)));
+
+
+// var url = Uri.parse('https://jsonplaceholder.typicode.com/comments');
+// var getResponse = await http.get(url);
+// var json = convert.jsonDecode(getResponse.body);
+// print(json);
+
+// CoomentClass.fromJson(json);
+
+// CoomentClass coomentClass = CoomentClass();
+// print(json);
+//
+// Future<CoomentClass> fetchPost() async {
+//
+//   final response = await http .get(url);
+//   if (response.statusCode == 200){
+//     return CoomentClass.fromJson(convert.jsonDecode(response.body));
+//   }else{
+//     throw Exception('failedrtyuiop');
+//   }
+// }
 
 
 
@@ -310,3 +369,4 @@ void main(List<String> arguments) {
 //       function('jj');
 //     }
 // }
+
